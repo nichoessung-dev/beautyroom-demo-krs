@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beauty Room AS | Vippeextensions, negler, bryn &amp; PMU i Kristiansand</title>
+<meta name="description" content="Vippeextensions, negler, brynslaminering og PMU i Kristiansand. Beauty Room AS har erfarne teknikere, hygienegodkjent autoklav og enkel nettbooking. Sentralt i Kvadraturen, Tordenskjolds gate 17.">
+<meta property="og:title" content="Beauty Room AS | Vipper, bryn, negler &amp; PMU i Kristiansand">
+<meta property="og:description" content="Skreddersydde behandlinger av erfarne teknikere. Bestill time enkelt på nett.">
+<!-- TODO ved lansering: bytt til absolutt URL (https://domenet.no/images/salong.jpg), og:image krever full URL -->
+<meta property="og:image" content="images/salong.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nb_NO">
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!--
+  BILDER i ./images/ (ekte foto fra Beauty Room):
+    salong.jpg              = salongen (hero)
+    ba-for.jpg / ba-etter.jpg = før/etter-slider (brynslaminering + vippeløft)
+    vipper-foxeye.jpg       = vippeextensions (kort)
+    vippeloft.jpg           = vippeløft (kort)
+    bryn.jpg                = brynslaminering (kort)
+    negler-french.jpg       = negler (kort)
+    pmu-lepper.jpg          = PMU lepper (kort)
+    orehull.jpg             = ørehulltagning-promo (kort)
+    toothgems.jpg           = tannsmykke (kort)
+    team-*.jpg              = ansattportretter (maryjane, angie, oleksandra, liudmyla, julia, olena, thy)
+    NB: roller for Liudmyla/Julia/Olena er satt til "Skjønnhetstekniker" (bekreft med salongen)
+    team-1/2/3.jpg          = ubrukt nå (gamle navnløse salongbilder)
+    galleri: vipper-klassisk, negler-blomstervegg, hero, negler-blabaer,
+             vipper-volum, negler-almond, negler-ombre, vipper-for-etter
+    vipper-makro.jpg        = kurs-seksjonen
+    logo.jpg / logo-banner.jpg = logofiler
+  MANGLER FORTSATT: voksing- og spraytan-foto (kortene bruker ikoner)
+-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Beauty Room AS",
+  "description": "Skjønnhetssalong i Kristiansand: vippeextensions, vippeløft, bryn, negler, PMU, voksing, spray tan, ørehulltagning og tannsmykker.",
+  "image": "images/salong.jpg",
+  "telephone": "+4797875166",
+  "email": "beautyroom.krs.as@gmail.com",
+  "priceRange": "kr 100–10 000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tordenskjolds gate 17",
+    "postalCode": "4612",
+    "addressLocality": "Kristiansand",
+    "addressCountry": "NO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 58.1471,
+    "longitude": 7.9903
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "10:00",
+      "closes": "16:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/beautyroomkrs",
+    "https://www.facebook.com/beautyroomkrs"
+  ],
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Tordenskjolds+gate+17%2C+4612+Kristiansand"
+}
+</script>
+
+<style>
+:root{
+  --bg:#FBF9F6;
+  --bg-2:#F4EFE9;
+  --ink:#1C1A17;
+  --ink-soft:#4c463d;
+  --gold:#C6A455;
+  --gold-dark:#A8853B;
+  --gold-deep:#8F6E2E;
+  --gold-light:#E8CF8E;
+  --blush:#F5E3DD;
+  --blush-2:#EDD2C9;
+  --green:#144439;
+  --green-deep:#0E2F28;
+  --foil:linear-gradient(105deg,#A8853B 0%,#C6A455 35%,#E8CF8E 50%,#C6A455 65%,#A8853B 100%);
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',system-ui,sans-serif;
+  --shadow:0 18px 50px -22px rgba(28,26,23,.22);
+  --shadow-soft:0 10px 34px -18px rgba(28,26,23,.16);
+  --ease:cubic-bezier(.22,.61,.28,1);
+  --marble:radial-gradient(90rem 42rem at 8% -10%,rgba(198,164,85,.05),transparent 60%),
+           radial-gradient(70rem 36rem at 108% 8%,rgba(28,26,23,.035),transparent 55%),
+           radial-gradient(60rem 44rem at 50% 118%,rgba(198,164,85,.045),transparent 58%);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{
+  font-family:var(--sans);font-weight:300;color:var(--ink);
+  background:var(--bg);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.container{width:min(1180px,92%);margin-inline:auto}
+
+::selection{background:var(--gold-light);color:var(--ink)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--gold-dark);outline-offset:3px;border-radius:2px}
+
+/* ---------- typografi ---------- */
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:.005em}
+h1{font-size:clamp(2.5rem,5.6vw,4.1rem)}
+h2{font-size:clamp(2rem,4.2vw,3.1rem)}
+.lede{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--ink-soft);font-weight:300}
+.label{
+  display:inline-flex;align-items:center;gap:14px;
+  font-size:.72rem;letter-spacing:.42em;text-transform:uppercase;
+  color:var(--gold-dark);font-weight:500;
+}
+.label::before,.label.center::after{
+  content:"";width:7px;height:7px;flex:none;
+  border:1px solid var(--gold);transform:rotate(45deg);
+}
+.label.center{justify-content:center}
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+/* mørk foliegradient for tekst på lys bakgrunn (kontrast ≥ 3:1) */
+.foil-text{
+  background:linear-gradient(105deg,#7D5F27 0%,#8F6E2E 30%,#A8853B 50%,#8F6E2E 70%,#7D5F27 100%);
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;
+}
+
+.divider{display:flex;align-items:center;gap:12px;margin:26px 0}
+.divider::before,.divider::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold) 50%,transparent)}
+.divider span{width:8px;height:8px;border:1px solid var(--gold);transform:rotate(45deg);background:linear-gradient(135deg,var(--gold-light),var(--gold))}
+
+/* blomsterglød: myke rosa felter som ekko av blomsterveggen */
+.petals{position:relative}
+.petals::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(46rem 26rem at 106% -6%,rgba(237,210,201,.5),transparent 62%),
+    radial-gradient(36rem 22rem at -8% 108%,rgba(245,227,221,.55),transparent 60%);
+}
+
+/* ---------- knapper ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--sans);font-size:.82rem;font-weight:500;
+  letter-spacing:.22em;text-transform:uppercase;
+  padding:17px 34px;border:none;cursor:pointer;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),background-position .5s var(--ease);
+}
+.btn-gold{
+  color:var(--ink);background:var(--foil);background-size:220% 100%;background-position:0% 0;
+  font-weight:600;position:relative;overflow:hidden;
+  box-shadow:0 12px 28px -12px rgba(168,133,59,.55);
+}
+.btn-gold::after{
+  content:"";position:absolute;top:0;left:-130%;width:55%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);
+  transform:skewX(-18deg);transition:left .75s var(--ease);pointer-events:none;
+}
+.btn-gold:hover{background-position:95% 0;transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(168,133,59,.65)}
+.btn-gold:hover::after{left:150%}
+/* stor premium-CTA i hero */
+.btn-hero{
+  padding:20px 44px;font-size:.86rem;letter-spacing:.24em;
+  box-shadow:0 10px 24px -8px rgba(168,133,59,.5),0 26px 50px -20px rgba(168,133,59,.55);
+}
+.btn-hero:hover{transform:translateY(-3px);box-shadow:0 14px 30px -8px rgba(168,133,59,.6),0 34px 60px -20px rgba(168,133,59,.6)}
+.btn-line{
+  color:var(--ink);background:transparent;
+  border:1px solid var(--gold);position:relative;
+}
+.btn-line:hover{background:rgba(198,164,85,.08);transform:translateY(-2px)}
+/* understated tekst-CTA */
+.btn-ghost{
+  color:var(--gold-deep);background:transparent;border:none;padding:19px 14px;
+  gap:11px;
+}
+.btn-ghost .arw{width:26px;height:1px;background:var(--gold-dark);position:relative;transition:width .35s var(--ease)}
+.btn-ghost .arw::after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;border-top:1px solid var(--gold-dark);border-right:1px solid var(--gold-dark);transform:rotate(45deg)}
+.btn-ghost:hover{color:var(--gold-deep)}
+.btn-ghost:hover .arw{width:38px}
+
+/* ---------- header ---------- */
+.site-header{
+  position:fixed;inset:0 0 auto;z-index:100;
+  background:rgba(251,249,246,0);
+  transition:background .4s var(--ease),box-shadow .4s var(--ease),padding .4s var(--ease);
+  padding:22px 0;
+}
+.site-header.scrolled{
+  background:rgba(251,249,246,.9);
+  backdrop-filter:blur(16px) saturate(1.1);-webkit-backdrop-filter:blur(16px) saturate(1.1);
+  box-shadow:0 1px 0 rgba(198,164,85,.24),0 14px 40px -26px rgba(28,26,23,.28);
+  padding:12px 0;
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:15px}
+.brand svg{width:52px;height:52px;flex:none;transition:transform .5s var(--ease)}
+.brand:hover svg{transform:rotate(45deg)}
+.brand-name{font-family:var(--serif);font-weight:600;font-size:1.28rem;letter-spacing:.36em;text-transform:uppercase;line-height:1}
+.brand-name small{display:block;font-family:var(--sans);font-weight:400;font-size:.58rem;letter-spacing:.54em;color:var(--gold-dark);margin-top:6px}
+.main-nav ul{display:flex;gap:44px}
+.main-nav a{
+  font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:400;
+  position:relative;padding:6px 0;color:var(--ink-soft);transition:color .3s var(--ease);
+}
+.main-nav a:hover{color:var(--ink)}
+.main-nav a::after{
+  content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;
+  background:var(--gold);transform:scaleX(0);transform-origin:right;
+  transition:transform .35s var(--ease);
+}
+.main-nav a:hover::after{transform:scaleX(1);transform-origin:left}
+.header-cta{padding:15px 32px;letter-spacing:.2em}
+.burger{
+  display:none;background:none;border:none;cursor:pointer;
+  width:44px;height:44px;position:relative;z-index:110;
+}
+.burger span{
+  display:block;width:24px;height:1.6px;background:var(--ink);margin:6px auto;
+  transition:transform .35s var(--ease),opacity .3s;
+}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7.6px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7.6px) rotate(-45deg)}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;
+  background:linear-gradient(176deg,#FFFDFB 0%,var(--bg) 48%,var(--bg-2) 100%);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(48rem 40rem at 116% -12%,rgba(232,207,142,.22),transparent 60%),
+    radial-gradient(42rem 34rem at -10% 6%,rgba(243,220,213,.42),transparent 58%),
+    var(--marble);
+}
+.hero-grid{
+  position:relative;z-index:1;display:grid;grid-template-columns:1.06fr .94fr;
+  gap:clamp(44px,6vw,96px);align-items:center;
+  padding:clamp(140px,18vh,196px) 0 clamp(76px,10vh,112px);
+}
+.hero-content{max-width:600px}
+.hero h1{
+  margin:28px 0 24px;
+  font-size:clamp(2.7rem,6vw,4.7rem);line-height:1.05;letter-spacing:-.005em;
+}
+.hero h1 em{font-style:italic;font-weight:500}
+.hero .lede{max-width:456px;font-size:clamp(1.08rem,1.5vw,1.24rem);line-height:1.7}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:44px}
+
+/* ---- trust-indikatorer ---- */
+.hero-trust{
+  display:flex;flex-wrap:wrap;margin-top:52px;padding-top:34px;
+  border-top:1px solid rgba(198,164,85,.28);
+}
+.hero-trust .ht{flex:1 1 0;min-width:118px;padding:2px 24px;position:relative}
+.hero-trust .ht:first-child{padding-left:0}
+.hero-trust .ht + .ht::before{
+  content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:1px;height:36px;
+  background:linear-gradient(rgba(198,164,85,0),rgba(198,164,85,.45),rgba(198,164,85,0));
+}
+.ht-top{display:flex;align-items:center;gap:6px;font-family:var(--serif);font-size:1.4rem;font-weight:600;color:var(--gold-deep);line-height:1}
+.ht-top svg{width:22px;height:22px;flex:none}
+.ht-stars{display:inline-flex;gap:2px}
+.ht-stars svg{width:14px;height:14px}
+.ht-top sup{font-size:.62em;font-weight:600}
+.ht-sub{margin-top:8px;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* ---- bilde med dybde ---- */
+.hero-visual{position:relative;z-index:1}
+.hero-visual::before{
+  content:"";position:absolute;inset:0;z-index:-1;border-radius:20px;
+  border:1px solid rgba(198,164,85,.42);transform:translate(24px,24px);
+}
+.hero-visual::after{
+  content:"";position:absolute;inset:-12% -8% -6% -12%;z-index:-1;
+  background:radial-gradient(circle at 58% 42%,rgba(232,207,142,.26),transparent 60%);
+  filter:blur(28px);
+}
+.hero-figure{
+  position:relative;margin:0;border-radius:20px;overflow:hidden;
+  box-shadow:0 34px 74px -28px rgba(28,26,23,.42),0 10px 26px -16px rgba(28,26,23,.3);
+}
+.hero-figure img{
+  width:100%;aspect-ratio:5/6;object-fit:cover;object-position:38% 42%;display:block;
+  filter:saturate(1.04) contrast(1.02) brightness(1.02);
+  transition:transform 1.3s var(--ease);
+}
+.hero-figure:hover img{transform:scale(1.045)}
+.hero-figure::after{
+  content:"";position:absolute;inset:0;border-radius:20px;pointer-events:none;
+  border:1px solid rgba(232,207,142,.6);box-shadow:0 0 0 1px rgba(255,255,255,.35) inset;
+}
+/* mykere, litt lengre entré for bildet */
+.js .hero-visual.reveal{transform:translateY(30px) scale(.985);transition-duration:1s}
+.gilt{position:relative}
+.gilt::after{content:"";position:absolute;inset:12px;border:1px solid rgba(232,207,142,.7);pointer-events:none}
+
+/* ---------- sections ---------- */
+section{padding:clamp(76px,9vw,128px) 0;position:relative}
+.section-head{max-width:640px;margin-bottom:clamp(40px,6vw,64px)}
+.section-head h2{margin:20px 0 16px}
+.section-head.center{margin-inline:auto;text-align:center}
+
+/* ---------- USP ---------- */
+.usp{padding-top:clamp(56px,7vw,90px)}
+.usp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.usp-card{
+  background:#fff;padding:38px 30px 34px;position:relative;
+  border:1px solid rgba(198,164,85,.22);box-shadow:var(--shadow-soft);
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease);
+}
+.usp-card::before{
+  content:"";position:absolute;inset:0 auto auto 0;width:100%;height:2px;
+  background:var(--foil);opacity:0;transition:opacity .4s;
+}
+.usp-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.usp-card:hover::before{opacity:1}
+.usp-card svg{width:34px;height:34px;margin-bottom:18px}
+.usp-card h3{font-size:1.28rem;margin-bottom:10px}
+.usp-card p{font-size:.92rem;color:var(--ink-soft);line-height:1.6}
+
+/* ---------- tjenester ---------- */
+.services{background:var(--bg-2)}
+.services::after{content:"";position:absolute;inset:0;background:var(--marble);pointer-events:none}
+.services .container{position:relative;z-index:1}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc-card{
+  background:#fff;display:flex;flex-direction:column;
+  border:1px solid rgba(198,164,85,.2);box-shadow:var(--shadow-soft);
+  transition:transform .45s var(--ease),box-shadow .45s var(--ease);
+  position:relative;overflow:hidden;
+}
+.svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.svc-media{position:relative;overflow:hidden}
+.svc-media img{
+  width:100%;aspect-ratio:4/3;object-fit:cover;
+  filter:saturate(1.05) contrast(1.03) brightness(1.02);
+  transition:transform .8s var(--ease);
+}
+.svc-card:hover .svc-media img{transform:scale(1.045)}
+.svc-media::after{
+  content:"";position:absolute;inset:10px;border:1px solid rgba(232,207,142,.55);
+  pointer-events:none;
+}
+.svc-body{padding:24px 26px 26px;display:flex;flex-direction:column;flex:1;gap:9px}
+.svc-body h3{font-size:1.45rem}
+.svc-body p{font-size:.92rem;color:var(--ink-soft);flex:1}
+.svc-meta{display:flex;align-items:center;justify-content:space-between;margin-top:8px;padding-top:15px;border-top:1px solid rgba(198,164,85,.25)}
+.svc-price{font-family:var(--serif);font-size:1.22rem;font-weight:600;color:var(--gold-deep)}
+.svc-price small{font-family:var(--sans);font-size:.68rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);display:block}
+.svc-book{
+  font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;font-weight:500;color:var(--gold-deep);
+  display:inline-flex;align-items:center;gap:8px;
+}
+.svc-book::after{content:"→";transition:transform .3s var(--ease)}
+.svc-book:hover::after{transform:translateX(5px)}
+.svc-icon{
+  aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(160deg,#fff 0%,var(--blush) 130%);
+  border-bottom:1px solid rgba(198,164,85,.16);position:relative;
+}
+.svc-icon svg{width:48px;height:48px}
+.svc-icon::after{content:"";position:absolute;inset:10px;border:1px solid rgba(232,207,142,.4);pointer-events:none}
+.badge{
+  position:absolute;top:16px;right:16px;z-index:2;
+  background:var(--blush);color:var(--ink);
+  font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  padding:7px 12px;border:1px solid rgba(198,164,85,.3);
+}
+
+/* ---------- før/etter-slider ---------- */
+.results .section-head{margin-bottom:clamp(30px,4vw,48px)}
+.ba-wrap{max-width:820px;margin-inline:auto}
+.ba{
+  position:relative;aspect-ratio:1440/790;overflow:hidden;
+  box-shadow:var(--shadow);background:var(--bg-2);
+  touch-action:pan-y;
+}
+.ba::after{content:"";position:absolute;inset:10px;border:1px solid rgba(232,207,142,.6);pointer-events:none;z-index:4}
+.ba img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  filter:saturate(1.05) contrast(1.03) brightness(1.02);
+}
+.ba .ba-before{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0)}
+.ba-line{
+  position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;z-index:3;
+  background:linear-gradient(180deg,var(--gold-light),var(--gold),var(--gold-light));
+  transform:translateX(-1px);pointer-events:none;
+}
+.ba-handle{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(251,249,246,.96);border:1px solid var(--gold);
+  box-shadow:0 8px 22px -8px rgba(28,26,23,.4);
+  display:flex;align-items:center;justify-content:center;gap:3px;
+}
+.ba-handle svg{width:9px;height:12px}
+.ba-tag{
+  position:absolute;top:16px;z-index:3;pointer-events:none;
+  font-size:.66rem;font-weight:500;letter-spacing:.28em;text-transform:uppercase;
+  background:rgba(28,26,23,.72);color:#F5F1E9;padding:7px 14px 7px 16px;
+}
+.ba-tag-for{left:16px}
+.ba-tag-etter{right:16px}
+.ba input[type="range"]{
+  position:absolute;inset:0;width:100%;height:100%;margin:0;z-index:5;
+  opacity:0;cursor:ew-resize;-webkit-appearance:none;appearance:none;background:transparent;
+}
+.ba:has(input:focus-visible){outline:2px solid var(--gold-dark);outline-offset:4px}
+.ba-caption{
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  margin-top:18px;font-size:.88rem;color:var(--ink-soft);
+}
+.ba-caption b{font-weight:500;color:var(--ink)}
+.ba-hint{display:inline-flex;align-items:center;gap:8px;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep)}
+
+/* ---------- priser ---------- */
+.prices .section-head{margin-bottom:clamp(30px,4vw,48px)}
+.acc{max-width:860px;margin-inline:auto;border-top:1px solid rgba(198,164,85,.35)}
+.acc-item{border-bottom:1px solid rgba(198,164,85,.35)}
+.acc-btn{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:18px;
+  background:none;border:none;cursor:pointer;text-align:left;
+  font-family:var(--serif);font-weight:600;font-size:clamp(1.25rem,2.4vw,1.6rem);color:var(--ink);
+  padding:26px 6px;transition:color .3s;
+}
+.acc-btn:hover{color:var(--gold-deep)}
+.acc-btn .count{font-family:var(--sans);font-size:.68rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dark);margin-left:14px}
+.acc-ic{position:relative;width:30px;height:30px;flex:none;border:1px solid var(--gold);border-radius:50%}
+.acc-ic::before,.acc-ic::after{
+  content:"";position:absolute;top:50%;left:50%;background:var(--gold-dark);
+  transition:transform .4s var(--ease);
+}
+.acc-ic::before{width:12px;height:1.4px;transform:translate(-50%,-50%)}
+.acc-ic::after{width:1.4px;height:12px;transform:translate(-50%,-50%)}
+.acc-btn[aria-expanded="true"] .acc-ic::after{transform:translate(-50%,-50%) scaleY(0)}
+.acc-btn[aria-expanded="true"] .acc-ic{background:rgba(198,164,85,.12)}
+.acc-panel{
+  overflow:hidden;max-height:0;visibility:hidden;
+  transition:max-height .55s var(--ease),visibility 0s linear .55s;
+}
+.acc-panel.open{visibility:visible;transition:max-height .55s var(--ease),visibility 0s linear 0s}
+.acc-inner{padding:4px 6px 38px}
+.price-note{font-size:.84rem;font-style:italic;color:var(--ink-soft);margin-top:16px}
+.prow{display:flex;align-items:baseline;gap:12px;padding:9px 0;font-size:.97rem}
+.prow .dots{flex:1;border-bottom:1px dotted rgba(198,164,85,.6);transform:translateY(-4px)}
+.prow .pr{font-weight:500;white-space:nowrap;font-feature-settings:"tnum";color:var(--ink)}
+.psub{
+  font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;font-weight:500;
+  color:var(--gold-dark);margin:24px 0 6px;display:flex;align-items:center;gap:12px;
+}
+.psub::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(198,164,85,.45),transparent)}
+.ptable{width:100%;border-collapse:collapse;margin-top:8px;font-size:.95rem}
+.ptable th{
+  font-weight:500;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark);
+  text-align:right;padding:10px 6px;border-bottom:1px solid rgba(198,164,85,.4);
+}
+.ptable th:first-child{text-align:left}
+.ptable td{padding:11px 6px;border-bottom:1px dotted rgba(198,164,85,.35);text-align:right;font-feature-settings:"tnum"}
+.ptable td:first-child{text-align:left}
+.prices-cta{text-align:center;margin-top:48px}
+
+/* ---------- om oss ---------- */
+.about{background:var(--bg-2);overflow:hidden}
+.about::after{content:"";position:absolute;inset:0;background:var(--marble);pointer-events:none}
+.about .container{position:relative;z-index:1}
+.about-grid{max-width:760px;margin-inline:auto;text-align:center}
+.about-text{max-width:640px;margin-inline:auto}
+.about-text h2{margin:22px 0 26px}
+.about-text p{margin-bottom:18px;color:var(--ink-soft)}
+.about-text p:last-child{margin-bottom:0}
+.about-divider{display:flex;align-items:center;justify-content:center;gap:12px;margin:34px auto 0;max-width:220px}
+.about-divider::before,.about-divider::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(198,164,85,.55),transparent)}
+.about-divider span{width:8px;height:8px;border:1px solid var(--gold);transform:rotate(45deg);background:linear-gradient(135deg,var(--gold-light),var(--gold))}
+.team-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.team-list li{
+  background:#fff;border:1px solid rgba(198,164,85,.3);
+  padding:10px 18px;font-size:.86rem;letter-spacing:.04em;
+}
+.team-list b{font-weight:500}
+.team-list span{color:var(--gold-deep);font-size:.78rem;display:block;letter-spacing:.1em;text-transform:uppercase;margin-top:1px}
+.team-head{text-align:center;margin:clamp(52px,7vw,80px) 0 clamp(30px,4vw,44px)}
+.team-head h3{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:10px}
+.team-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:22px}
+.team-card{flex:0 1 200px;max-width:212px;min-width:0;text-align:center}
+.team-photo{
+  position:relative;overflow:hidden;aspect-ratio:4/5;
+  background:var(--bg-2);box-shadow:var(--shadow-soft);
+}
+.team-photo img{
+  width:100%;height:100%;object-fit:cover;object-position:center 22%;
+  filter:saturate(1.05) contrast(1.03) brightness(1.02);
+  transition:transform .8s var(--ease);
+}
+.team-card:hover .team-photo img{transform:scale(1.045)}
+.team-photo::after{content:"";position:absolute;inset:9px;border:1px solid rgba(232,207,142,.55);pointer-events:none;opacity:0;transition:opacity .4s}
+.team-card:hover .team-photo::after{opacity:1}
+.team-photo.is-ph{display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#fff 0%,var(--blush) 130%)}
+.team-photo.is-ph svg{width:48%;height:auto;opacity:.9}
+.team-photo.is-ph::after{opacity:1}
+.team-card figcaption{margin-top:16px}
+.team-card figcaption b{display:block;font-family:var(--serif);font-weight:600;font-size:1.32rem;line-height:1.1}
+.team-card figcaption span{display:block;margin-top:3px;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);overflow-wrap:break-word;hyphens:auto}
+@media (max-width:640px){.team-card figcaption span{letter-spacing:.1em;font-size:.64rem}}
+
+/* ---------- galleri ---------- */
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.gallery-grid figure{position:relative;overflow:hidden;box-shadow:var(--shadow-soft)}
+.gallery-grid img{
+  width:100%;aspect-ratio:1/1;object-fit:cover;
+  filter:saturate(1.05) contrast(1.03) brightness(1.02);
+  transition:transform .8s var(--ease);
+}
+.gallery-grid figure:hover img{transform:scale(1.05)}
+.gallery-grid figure::after{content:"";position:absolute;inset:8px;border:1px solid rgba(232,207,142,.5);pointer-events:none;opacity:0;transition:opacity .4s}
+.gallery-grid figure:hover::after{opacity:1}
+
+/* ---------- anmeldelser ---------- */
+.stars{display:inline-flex;gap:3px;margin-bottom:16px}
+.stars svg{width:15px;height:15px}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.review-card{
+  background:#fff;border:1px solid rgba(198,164,85,.22);
+  padding:34px 30px 30px;display:flex;flex-direction:column;
+  box-shadow:var(--shadow-soft);position:relative;
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease);
+}
+.review-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.review-card::before{
+  content:"“";font-family:var(--serif);font-size:4.6rem;line-height:0;
+  position:absolute;top:38px;right:26px;color:rgba(198,164,85,.28);
+}
+.review-card blockquote{
+  font-family:var(--serif);font-size:1.18rem;line-height:1.45;font-weight:500;
+  flex:1;margin-bottom:22px;
+}
+.review-card cite{
+  font-style:normal;font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--gold-deep);font-weight:500;
+}
+.reviews-cta{text-align:center;margin-top:46px}
+
+/* ---------- kurs ---------- */
+.course{background:linear-gradient(150deg,var(--green-deep) 0%,var(--green) 60%,#1B5546 100%);color:#F5F1E9;overflow:hidden}
+.course::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60rem 30rem at 85% 0%,rgba(232,207,142,.16),transparent 55%),
+             radial-gradient(50rem 30rem at 0% 110%,rgba(237,210,201,.12),transparent 60%);
+}
+.course-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,80px);align-items:center;position:relative}
+.course .label{color:var(--gold-light)}
+.course .label::before{border-color:var(--gold-light)}
+.course h2{color:#fff;margin:20px 0 8px}
+.course .course-sub{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--gold-light);margin-bottom:24px}
+.course p{color:rgba(245,241,233,.82)}
+.course-feats{margin:28px 0 8px;display:grid;gap:14px}
+.course-feats li{display:flex;gap:14px;align-items:flex-start;font-size:.95rem;color:rgba(245,241,233,.88)}
+.course-feats li::before{
+  content:"";width:7px;height:7px;flex:none;margin-top:8px;
+  border:1px solid var(--gold-light);transform:rotate(45deg);
+  background:linear-gradient(135deg,var(--gold-light),transparent);
+}
+.course-price{
+  display:flex;align-items:baseline;gap:14px;margin:26px 0 30px;
+  font-family:var(--serif);
+}
+.course-price .num{font-size:clamp(2.2rem,4vw,3rem);font-weight:600;background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
+.course-price .per{font-size:.85rem;font-family:var(--sans);letter-spacing:.2em;text-transform:uppercase;color:rgba(245,241,233,.6)}
+.course-extra{
+  padding-top:24px;margin-top:30px;
+  border-top:1px solid rgba(232,207,142,.32);
+  font-size:.92rem;color:rgba(245,241,233,.85);
+  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+}
+.course-extra b{font-weight:500;color:#fff}
+.course-visual .gilt{box-shadow:0 30px 70px -30px rgba(0,0,0,.6)}
+.course-visual img,.course-visual video{
+  display:block;width:100%;aspect-ratio:4/5;object-fit:cover;
+  filter:saturate(1.05) contrast(1.03) brightness(1.02);
+}
+
+/* ---------- kontakt ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,60px);align-items:stretch}
+.contact-card{
+  background:#fff;border:1px solid rgba(198,164,85,.25);box-shadow:var(--shadow-soft);
+  padding:clamp(30px,4vw,48px);
+}
+.contact-list{display:grid;gap:22px;margin:30px 0}
+.contact-list li{display:flex;gap:16px;align-items:flex-start}
+.contact-list li>div{min-width:0;overflow-wrap:anywhere}
+.contact-list svg{width:20px;height:20px;flex:none;margin-top:3px}
+.contact-list .cl-label{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-dark);font-weight:500;display:block;margin-bottom:2px}
+.contact-list a:hover{color:var(--gold-deep)}
+.socials{display:flex;gap:12px;margin-top:6px}
+.socials a{
+  width:44px;height:44px;border:1px solid rgba(198,164,85,.4);border-radius:50%;
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:background .3s,transform .3s var(--ease);
+}
+.socials a:hover{background:rgba(198,164,85,.12);transform:translateY(-3px)}
+.socials svg{width:18px;height:18px}
+.hours{width:100%;border-collapse:collapse;margin-top:10px;font-size:.94rem}
+.hours td{padding:10px 4px;border-bottom:1px dotted rgba(198,164,85,.4)}
+.hours td:last-child{text-align:right;font-weight:400}
+.hours tr:last-child td{border-bottom:none}
+.map-wrap{position:relative;min-height:420px;box-shadow:var(--shadow)}
+.map-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35) sepia(.08)}
+.map-wrap::after{content:"";position:absolute;inset:0;border:1px solid rgba(198,164,85,.4);pointer-events:none}
+
+/* ---------- footer ---------- */
+.site-footer{
+  background:var(--green-deep);color:rgba(245,241,233,.75);
+  padding:70px 0 110px;font-size:.9rem;
+}
+.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;align-items:start}
+.footer-brand svg{width:52px;height:52px;margin-bottom:16px}
+.footer-brand .tagline{letter-spacing:.3em;text-transform:uppercase;font-size:.68rem;color:var(--gold-light)}
+.footer-head{font-family:var(--sans);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;font-weight:500}
+.footer-nav ul{display:grid;gap:10px}
+.footer-nav a:hover,.footer-contact a:hover{color:var(--gold-light)}
+.footer-contact p{margin-bottom:10px}
+.footer-bottom{
+  margin-top:56px;padding-top:26px;border-top:1px solid rgba(198,164,85,.25);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:.78rem;color:rgba(245,241,233,.55);
+}
+.footer-bottom a{color:var(--gold-light)}
+.footer-bottom a:hover{text-decoration:underline}
+
+/* ---------- sticky mobil-CTA ---------- */
+.mobile-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:90;
+  display:none;gap:12px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+  background:rgba(251,249,246,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  box-shadow:0 -8px 30px -12px rgba(28,26,23,.25);
+  border-top:1px solid rgba(198,164,85,.35);
+  transform:translateY(110%);transition:transform .45s var(--ease);
+}
+.mobile-cta.visible{transform:translateY(0)}
+.mobile-cta .btn{flex:1;padding:15px 10px}
+.mobile-cta .tel-btn{
+  width:52px;flex:none;border:1px solid var(--gold);border-radius:2px;
+  display:inline-flex;align-items:center;justify-content:center;background:#fff;
+}
+.mobile-cta .tel-btn svg{width:20px;height:20px}
+
+/* ---------- reveal (kun når JS kjører, ellers vises alt) ---------- */
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ---------- responsivt ---------- */
+@media (max-width:1024px){
+  .usp-grid{grid-template-columns:repeat(2,1fr)}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-grid{grid-template-columns:1fr;padding-top:124px}
+  .hero-content{max-width:640px}
+  .hero-visual{max-width:540px;margin-inline:auto}
+  .course-grid{grid-template-columns:1fr}
+  .course-visual{max-width:480px}
+  .gallery-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .main-nav{
+    position:fixed;inset:0;background:rgba(251,249,246,.98);
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;pointer-events:none;visibility:hidden;
+    transition:opacity .4s var(--ease),visibility 0s linear .4s;
+  }
+  .main-nav.open{
+    opacity:1;pointer-events:auto;visibility:visible;
+    transition:opacity .4s var(--ease),visibility 0s linear 0s;
+  }
+  .main-nav ul{flex-direction:column;text-align:center;gap:30px}
+  .main-nav a{font-size:1.05rem;letter-spacing:.3em}
+  .burger{display:block}
+  .header-cta{display:none}
+  .contact-grid{grid-template-columns:1fr}
+  .map-wrap{min-height:340px}
+  .mobile-cta{display:flex}
+}
+@media (max-width:640px){
+  .svc-grid{grid-template-columns:1fr}
+  .usp-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .team-grid{gap:14px}
+  .team-card{flex:0 1 calc(50% - 12px);max-width:none}
+  .reviews-grid{
+    display:flex;overflow-x:auto;scroll-snap-type:x mandatory;
+    gap:16px;margin-inline:-4%;padding:4px 4% 18px;
+    scrollbar-width:none;
+  }
+  .reviews-grid::-webkit-scrollbar{display:none}
+  .review-card{flex:0 0 84%;scroll-snap-align:center}
+  .footer-grid{grid-template-columns:1fr}
+  .ba-handle{width:52px;height:52px}
+  .hero h1{font-size:clamp(2.5rem,10vw,3.1rem)}
+  .hero-trust{display:grid;grid-template-columns:1fr 1fr;gap:22px 0}
+  .hero-trust .ht{padding:2px 18px}
+  .hero-trust .ht:nth-child(odd){padding-left:0}
+  .hero-trust .ht + .ht::before{display:none}
+  .hero-trust .ht:nth-child(even)::before{
+    content:"";display:block;position:absolute;left:0;top:50%;transform:translateY(-50%);
+    width:1px;height:36px;background:linear-gradient(rgba(198,164,85,0),rgba(198,164,85,.4),rgba(198,164,85,0));
+  }
+  .hero-visual::before{transform:translate(14px,14px)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="Beauty Room, til toppen">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <defs>
+          <linearGradient id="foil" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#A8853B"/><stop offset=".5" stop-color="#E8CF8E"/><stop offset="1" stop-color="#C6A455"/>
+          </linearGradient>
+        </defs>
+        <path d="M50 3 92 50 50 97 8 50Z" fill="none" stroke="url(#foil)" stroke-width="2"/>
+        <path d="M50 11 85 50 50 89 15 50Z" fill="none" stroke="url(#foil)" stroke-width="1.4"/>
+        <text x="50" y="63" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="38" font-weight="600" fill="url(#foil)">B</text>
+      </svg>
+      <span class="brand-name">Beauty Room<small>Kristiansand</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Hovedmeny">
+      <ul>
+        <li><a href="#tjenester">Tjenester</a></li>
+        <li><a href="#priser">Priser</a></li>
+        <li><a href="#om-oss">Om oss</a></li>
+        <li><a href="#kurs">Kurs</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-gold header-cta" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill time</a>
+    <button class="burger" aria-expanded="false" aria-controls="mainNav" aria-label="Åpne meny">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" aria-label="Introduksjon">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <span class="label reveal">Skjønnhetssalong · Kristiansand</span>
+      <h1 class="reveal" style="--d:.08s">Vipper, bryn, negler og PMU i <em class="foil-text">hjertet av Kristiansand</em></h1>
+      <p class="lede reveal" style="--d:.16s">Skreddersydde behandlinger utført av erfarne teknikere, i en salong som er like vakker som resultatene.</p>
+      <div class="hero-actions reveal" style="--d:.24s">
+        <a class="btn btn-gold btn-hero" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill time</a>
+        <a class="btn btn-ghost" href="#priser">Se priser <span class="arw" aria-hidden="true"></span></a>
+      </div>
+      <!-- TODO: bekreft tallene med salongen – Google-score og antall kunder er plassholdere -->
+      <div class="hero-trust reveal" style="--d:.34s">
+        <div class="ht">
+          <div class="ht-top">
+            <span class="ht-stars" role="img" aria-label="5 av 5 stjerner">
+              <svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            </span>
+          </div>
+          <div class="ht-sub">5,0 på Google</div>
+        </div>
+        <div class="ht">
+          <div class="ht-top">1000<sup>+</sup></div>
+          <div class="ht-sub">Fornøyde kunder</div>
+        </div>
+        <div class="ht">
+          <div class="ht-top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#8F6E2E" stroke-width="1.5" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m8.6 12 2.3 2.3 4.5-4.6"/></svg>
+          </div>
+          <div class="ht-sub">Sertifiserte teknikere</div>
+        </div>
+        <div class="ht">
+          <div class="ht-top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#8F6E2E" stroke-width="1.5" aria-hidden="true"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M12 21 8 9l4-6 4 6z"/></svg>
+          </div>
+          <div class="ht-sub">Premium produkter</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal" style="--d:.2s">
+      <figure class="hero-figure">
+        <img src="images/salong.jpg" alt="Salongen til Beauty Room med gullogo, blomstervegg og grønne velursstoler" fetchpriority="high" width="1349" height="1687">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== USP ==================== -->
+<section class="usp" aria-label="Hvorfor velge oss">
+  <div class="container">
+    <h2 class="sr-only">Hvorfor velge Beauty Room</h2>
+    <div class="usp-grid">
+      <div class="usp-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#A8853B" stroke-width="1.4" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m8.6 12 2.3 2.3 4.5-4.6"/></svg>
+        <h3>Hygiene i toppklasse</h3>
+        <p>Eneste salong i Kristiansand med hygienegodkjent autoklav for sterilisering av flergangsutstyr.</p>
+      </div>
+      <div class="usp-card reveal" style="--d:.1s">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#A8853B" stroke-width="1.4" aria-hidden="true"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M12 21 8 9l4-6 4 6z"/></svg>
+        <h3>Erfarne teknikere</h3>
+        <p>Teamet vårt har mange års erfaring med vipper, bryn, negler og permanent makeup.</p>
+      </div>
+      <div class="usp-card reveal" style="--d:.2s">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#A8853B" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="1.5"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="m9.5 15 1.8 1.8 3.4-3.4"/></svg>
+        <h3>Enkel nettbooking</h3>
+        <p>Bestill, endre eller avbestill timen din på nett, døgnet rundt, når det passer deg.</p>
+      </div>
+      <div class="usp-card reveal" style="--d:.3s">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#A8853B" stroke-width="1.4" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 1 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <h3>Sentralt i Kvadraturen</h3>
+        <p>Du finner oss i Tordenskjolds gate 17, midt i Kristiansand sentrum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TJENESTER ==================== -->
+<section class="services" id="tjenester">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="label center">Våre tjenester</span>
+      <h2>Behandlinger med <em class="foil-text">omtanke</em></h2>
+      <p class="lede">Fra vipper og bryn til negler og permanent makeup. Alt tilpasses ditt uttrykk og dine ønsker.</p>
+    </div>
+    <div class="svc-grid">
+
+      <article class="svc-card reveal">
+        <div class="svc-media"><img src="images/vipper-foxeye.jpg" alt="Vippeextensions med volumeffekt" loading="lazy" decoding="async" width="1080" height="1080"></div>
+        <div class="svc-body">
+          <h3>Vippeextensions</h3>
+          <p>Klassisk, mix, volum og mega volum. Skreddersydd til din øyeform og stil.</p>
+          <div class="svc-meta">
+            <span class="svc-price"><small>Fra</small>1 200 kr</span>
+            <a class="svc-book" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc-card reveal" style="--d:.08s">
+        <div class="svc-media"><img src="images/vippeloft.jpg" alt="Vippeløft med naturlig bøy på egne vipper" loading="lazy" decoding="async" width="526" height="519"></div>
+        <div class="svc-body">
+          <h3>Vippeløft &amp; farging</h3>
+          <p>Naturlig løft og farge på dine egne vipper. Effekten varer i ukevis.</p>
+          <div class="svc-meta">
+            <span class="svc-price"><small>Fra</small>800 kr</span>
+            <a class="svc-book" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc-card reveal" style="--d:.16s">
+        <div class="svc-media"><img src="images/bryn.jpg" alt="Brynslaminering med definerte, velformede bryn" loading="lazy" decoding="async" width="1340" height="1327"></div>
+        <div class="svc-body">
+          <h3>Bryn</h3>
+          <p>Brynslaminering, farge og forming for definerte bryn som rammer inn blikket.</p>
+          <div class="svc-meta">
+            <span class="svc-price"><small>Fra</small>250 kr</span>
+            <a class="svc-book" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-media"><img src="images/negler-french.jpg" alt="French manikyr med mandelformede gelenegler" loading="lazy" decoding="async" width="1290" height="1247"></div>
+        <div class="svc-body">
+          <h3>Negler</h3>
+          <p>Gelé, forlengelse og manikyr med shellac. Sterke negler med perfekt finish.</p>
+          <div class="svc-meta">
+            <span class="svc-price"><small>Fra</small>500 kr</span>
+            <a class="svc-book" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc-card reveal" style="--d:.08s">
+        <span class="badge">Gratis konsultasjon</span>
+        <div class="svc-media"><img src="images/pmu-lepper.jpg" alt="PMU lepper med jevn, naturlig leppefarge" loading="lazy" decoding="async" width="720" height="719"></div>
+        <div class="svc-body">
+          <h3>PMU / Permanent makeup</h3>
+          <p>Powder brows, lepper og eyeliner. Våkn opp klar hver dag.</p>
+          <div class="svc-meta">
+            <span class="svc-price"><small>Fra</small>3 500 kr</span>
+            <a class="svc-book" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc-card reveal" style="--d:.16s">
+        <div class="svc-media"><img src="images/orehull.jpg" alt="Ørehulltagning, øre med gullsmykker" loading="lazy" decoding="async" width="720" height="720" style="object-position:60% center"></div>
+        <div class="svc-body">
+          <h3>Ørehulltagning</h3>
+          <p>Trygg og hygienisk hulltagning. Øredobb er inkludert i prisen.</p>
+          <div class="svc-meta">
+            <span class="svc-price"><small>Fra</small>249 kr</span>
+            <a class="svc-book" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-media"><img src="images/toothgems.jpg" alt="Tooth gem, liten gullkrystall på tann" loading="lazy" decoding="async" width="1440" height="1800"></div>
+        <div class="svc-body">
+          <h3>Tooth gems</h3>
+          <p>Tannsmykker i krystall. En diskré detalj som får smilet til å funkle.</p>
+          <div class="svc-meta">
+            <span class="svc-price"><small>Fra</small>300 kr</span>
+            <a class="svc-book" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc-card reveal" style="--d:.08s">
+        <div class="svc-media"><img src="images/voksing.jpg" alt="Voksing av ben hos Beauty Room" loading="lazy" decoding="async" width="1600" height="1067"></div>
+        <div class="svc-body">
+          <h3>Voksing</h3>
+          <p>Rask og skånsom voksing av ansikt, kinn, overleppe og hake.</p>
+          <div class="svc-meta">
+            <span class="svc-price"><small>Fra</small>150 kr</span>
+            <a class="svc-book" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc-card reveal" style="--d:.16s">
+        <div class="svc-media"><img src="images/spraytan.jpg" alt="Spray tan-behandling hos Beauty Room" loading="lazy" decoding="async" width="1440" height="810"></div>
+        <div class="svc-body">
+          <h3>Spray tan</h3>
+          <p>Jevn og naturlig gyllen glød, helt uten sol.</p>
+          <div class="svc-meta">
+            <span class="svc-price">450 kr</span>
+            <a class="svc-book" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FØR / ETTER ==================== -->
+<section class="results petals" id="resultater" aria-label="Før og etter">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="label center">Resultater</span>
+      <h2>Se <em class="foil-text">forskjellen</em></h2>
+      <p class="lede">Dra i den gylne linjen og se hva brynslaminering og vippeløft gjør.</p>
+    </div>
+    <div class="ba-wrap reveal">
+      <div class="ba" role="group" aria-label="Før- og etterbilde av brynslaminering og vippeløft">
+        <img class="ba-after" src="images/ba-etter.jpg" alt="Etter: laminerte bryn og løftede vipper" loading="lazy" decoding="async" width="1440" height="790">
+        <img class="ba-before" src="images/ba-for.jpg" alt="Før: naturlige bryn og vipper" loading="lazy" decoding="async" width="1440" height="790">
+        <div class="ba-line" aria-hidden="true">
+          <div class="ba-handle">
+            <svg viewBox="0 0 8 12" fill="none" stroke="#A8853B" stroke-width="1.6" aria-hidden="true"><path d="M6.5 1 1.5 6l5 5"/></svg>
+            <svg viewBox="0 0 8 12" fill="none" stroke="#A8853B" stroke-width="1.6" aria-hidden="true"><path d="M1.5 1l5 5-5 5"/></svg>
+          </div>
+        </div>
+        <span class="ba-tag ba-tag-for" aria-hidden="true">Før</span>
+        <span class="ba-tag ba-tag-etter" aria-hidden="true">Etter</span>
+        <input type="range" min="0" max="100" step="0.5" value="50" aria-label="Sammenlign før- og etterbilde">
+      </div>
+      <div class="ba-caption">
+        <span><b>Brynslaminering + vippeløft</b> · utført hos Beauty Room</span>
+        <span class="ba-hint" aria-hidden="true">⟷ Dra for å sammenligne</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PRISER ==================== -->
+<section class="prices" id="priser">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="label center">Prisliste</span>
+      <h2>Ærlige priser, <em class="foil-text">ingen overraskelser</em></h2>
+      <p class="lede">Bestill enkelt på nett, du betaler i salongen.</p>
+    </div>
+
+    <div class="acc reveal">
+
+      <!-- Vippeextensions -->
+      <div class="acc-item">
+        <h3><button class="acc-btn" aria-expanded="false" aria-controls="p1" id="b1">Vippeextensions<span class="acc-ic" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="p1" role="region" aria-labelledby="b1">
+          <div class="acc-inner">
+            <div class="psub">Nytt sett</div>
+            <div class="prow"><span>Klassisk</span><span class="dots"></span><span class="pr">1 200 kr</span></div>
+            <div class="prow"><span>Mix</span><span class="dots"></span><span class="pr">1 400 kr</span></div>
+            <div class="prow"><span>Volum</span><span class="dots"></span><span class="pr">1 600 kr</span></div>
+            <div class="prow"><span>Mega volum</span><span class="dots"></span><span class="pr">1 800 kr</span></div>
+            <div class="psub">Påfyll</div>
+            <table class="ptable">
+              <thead><tr><th scope="col">Type</th><th scope="col">2 uker</th><th scope="col">3 uker</th><th scope="col">4 uker</th></tr></thead>
+              <tbody>
+                <tr><td>Klassisk</td><td>650 kr</td><td>700 kr</td><td>800 kr</td></tr>
+                <tr><td>Mix</td><td>700 kr</td><td>800 kr</td><td>900 kr</td></tr>
+                <tr><td>Volum</td><td>800 kr</td><td>900 kr</td><td>1 000 kr</td></tr>
+                <tr><td>Mega volum</td><td>900 kr</td><td>1 000 kr</td><td>1 100 kr</td></tr>
+              </tbody>
+            </table>
+            <div class="prow" style="margin-top:14px"><span>Mini påfyll</span><span class="dots"></span><span class="pr">600 kr</span></div>
+            <div class="prow"><span>Fjerning av extensions</span><span class="dots"></span><span class="pr">250 kr</span></div>
+            <p class="price-note">Over 4 uker siden forrige påfyll regnes som nytt sett.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vipper & bryn -->
+      <div class="acc-item">
+        <h3><button class="acc-btn" aria-expanded="false" aria-controls="p2" id="b2">Vipper &amp; bryn<span class="acc-ic" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="p2" role="region" aria-labelledby="b2">
+          <div class="acc-inner">
+            <div class="prow"><span>Vippeløft</span><span class="dots"></span><span class="pr">900 kr</span></div>
+            <div class="prow"><span>Farging av vipper</span><span class="dots"></span><span class="pr">250 kr</span></div>
+            <div class="prow"><span>Vippeløft + farge/form av bryn</span><span class="dots"></span><span class="pr">1 200 kr</span></div>
+            <div class="prow"><span>Vippeløft + brynslaminering</span><span class="dots"></span><span class="pr">1 500 kr</span></div>
+            <div class="prow"><span>Brynslaminering</span><span class="dots"></span><span class="pr">900 kr</span></div>
+            <div class="prow"><span>Brynslaminering + farging av vipper</span><span class="dots"></span><span class="pr">1 000 kr</span></div>
+            <div class="prow"><span>Farge og forming av bryn</span><span class="dots"></span><span class="pr">500 kr</span></div>
+            <div class="prow"><span>Farging og forming av bryn + farging av vipper</span><span class="dots"></span><span class="pr">600 kr</span></div>
+            <div class="prow"><span>Farging av bryn</span><span class="dots"></span><span class="pr">250 kr</span></div>
+            <div class="prow"><span>Forming av bryn</span><span class="dots"></span><span class="pr">250 kr</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Negler -->
+      <div class="acc-item">
+        <h3><button class="acc-btn" aria-expanded="false" aria-controls="p3" id="b3">Negler<span class="acc-ic" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="p3" role="region" aria-labelledby="b3">
+          <div class="acc-inner">
+            <div class="prow"><span>Nytt sett gelé, egen lengde + gelélakk</span><span class="dots"></span><span class="pr">1 000 kr</span></div>
+            <div class="prow"><span>Nytt sett forlengelse + gelélakk</span><span class="dots"></span><span class="pr">1 300 kr</span></div>
+            <div class="prow"><span>Manikyr + shellac</span><span class="dots"></span><span class="pr">800 kr</span></div>
+            <div class="prow"><span>Påfyll gelénegler</span><span class="dots"></span><span class="pr">900 kr</span></div>
+            <div class="prow"><span>Fjerning av gelé</span><span class="dots"></span><span class="pr">300 kr</span></div>
+            <div class="prow"><span>Fjerning av akryl</span><span class="dots"></span><span class="pr">400 kr</span></div>
+            <div class="prow"><span>Fjerning + manikyr</span><span class="dots"></span><span class="pr">600 kr</span></div>
+            <div class="prow"><span>Reparasjon av én negl</span><span class="dots"></span><span class="pr">100 kr</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PMU -->
+      <div class="acc-item">
+        <h3><button class="acc-btn" aria-expanded="false" aria-controls="p4" id="b4">PMU / Permanent makeup<span class="acc-ic" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="p4" role="region" aria-labelledby="b4">
+          <div class="acc-inner">
+            <div class="prow"><span>Konsultasjon</span><span class="dots"></span><span class="pr">Gratis</span></div>
+            <div class="prow"><span>Powder brows</span><span class="dots"></span><span class="pr">4 000 kr</span></div>
+            <div class="prow"><span>Powder brows, påfyll</span><span class="dots"></span><span class="pr">2 500 kr</span></div>
+            <div class="prow"><span>Powder brows, påfyll 6–9 uker</span><span class="dots"></span><span class="pr">1 250 kr</span></div>
+            <div class="prow"><span>Lepper</span><span class="dots"></span><span class="pr">4 000 kr</span></div>
+            <div class="prow"><span>Lepper, påfyll</span><span class="dots"></span><span class="pr">2 500 kr</span></div>
+            <div class="prow"><span>Eyeliner</span><span class="dots"></span><span class="pr">3 500 kr</span></div>
+            <div class="prow"><span>Eyeliner, påfyll</span><span class="dots"></span><span class="pr">1 500 kr</span></div>
+            <div class="prow"><span>Skjønnhetsflekk</span><span class="dots"></span><span class="pr">700 kr</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Voksing -->
+      <div class="acc-item">
+        <h3><button class="acc-btn" aria-expanded="false" aria-controls="p5" id="b5">Voksing<span class="acc-ic" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="p5" role="region" aria-labelledby="b5">
+          <div class="acc-inner">
+            <div class="prow"><span>Ansikt</span><span class="dots"></span><span class="pr">500 kr</span></div>
+            <div class="prow"><span>Kinn</span><span class="dots"></span><span class="pr">150 kr</span></div>
+            <div class="prow"><span>Overleppe</span><span class="dots"></span><span class="pr">150 kr</span></div>
+            <div class="prow"><span>Hake</span><span class="dots"></span><span class="pr">150 kr</span></div>
+            <div class="prow"><span>Overleppe + hake</span><span class="dots"></span><span class="pr">250 kr</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Annet -->
+      <div class="acc-item">
+        <h3><button class="acc-btn" aria-expanded="false" aria-controls="p6" id="b6">Annet<span class="acc-ic" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="p6" role="region" aria-labelledby="b6">
+          <div class="acc-inner">
+            <div class="prow"><span>Spray tan</span><span class="dots"></span><span class="pr">450 kr</span></div>
+            <div class="psub">Ørehulltagning</div>
+            <div class="prow"><span>1 hull, inkl. øredobb</span><span class="dots"></span><span class="pr">399 kr</span></div>
+            <div class="prow"><span>2 hull, inkl. øredobber</span><span class="dots"></span><span class="pr">499 kr</span></div>
+            <div class="psub">Tooth gems</div>
+            <div class="prow"><span>1 diamant</span><span class="dots"></span><span class="pr">300 kr</span></div>
+            <div class="prow"><span>2 diamanter</span><span class="dots"></span><span class="pr">500 kr</span></div>
+            <div class="prow"><span>3 diamanter</span><span class="dots"></span><span class="pr">800 kr</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lærling -->
+      <div class="acc-item">
+        <h3><button class="acc-btn" aria-expanded="false" aria-controls="p7" id="b7">Lærling<span class="count">Negler · redusert pris hos Thy</span><span class="acc-ic" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="p7" role="region" aria-labelledby="b7">
+          <div class="acc-inner">
+            <div class="prow"><span>Nytt sett forlengelse + gelélakk</span><span class="dots"></span><span class="pr">650 kr</span></div>
+            <div class="prow"><span>Nytt sett på egne negler</span><span class="dots"></span><span class="pr">500 kr</span></div>
+            <div class="prow"><span>Påfyll</span><span class="dots"></span><span class="pr">500 kr</span></div>
+            <div class="prow"><span>Fjerning</span><span class="dots"></span><span class="pr">300 kr</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="prices-cta reveal">
+      <a class="btn btn-gold" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill time på nett</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== OM OSS ==================== -->
+<section class="about" id="om-oss">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="label center">Om oss</span>
+        <h2>En salong bygget på <em class="foil-text">tillit</em></h2>
+        <p>Beauty Room AS er en profesjonell skjønnhetssalong sentralt i Kristiansand. Vi er spesialister på vipper, bryn, negler og permanent makeup, og hver eneste behandling tilpasses deg og dine ønsker. 🤍</p>
+        <p>Hygiene står alltid øverst hos oss: Som eneste salong i Kristiansand steriliserer vi alt flergangsutstyr i hygienegodkjent autoklav. Du skal føle deg trygg fra du setter deg i stolen til du ser resultatet.</p>
+        <div class="about-divider" aria-hidden="true"><span></span></div>
+      </div>
+    </div>
+
+    <div class="team-head reveal">
+      <span class="label center">Teamet</span>
+      <h3>Møt <em class="foil-text">teamet vårt</em></h3>
+    </div>
+    <div class="team-grid reveal">
+      <figure class="team-card">
+        <div class="team-photo"><img src="images/team-maryjane.jpg" alt="Mary Jane hos Beauty Room" loading="lazy" decoding="async"></div>
+        <figcaption><b>Mary Jane</b><span>Vipper · Kursholder</span></figcaption>
+      </figure>
+      <figure class="team-card">
+        <div class="team-photo"><img src="images/team-angie.jpg" alt="Angie hos Beauty Room" loading="lazy" decoding="async"></div>
+        <figcaption><b>Angie</b><span>Vippeextensions</span></figcaption>
+      </figure>
+      <figure class="team-card">
+        <div class="team-photo"><img src="images/team-oleksandra.jpg" alt="Oleksandra hos Beauty Room" loading="lazy" decoding="async"></div>
+        <figcaption><b>Oleksandra</b><span>PMU</span></figcaption>
+      </figure>
+      <figure class="team-card">
+        <div class="team-photo"><img src="images/team-liudmyla.jpg" alt="Liudmyla hos Beauty Room" loading="lazy" decoding="async"></div>
+        <figcaption><b>Liudmyla</b><span>Skjønnhetstekniker</span></figcaption>
+      </figure>
+      <figure class="team-card">
+        <div class="team-photo"><img src="images/team-julia.jpg" alt="Julia hos Beauty Room" loading="lazy" decoding="async"></div>
+        <figcaption><b>Julia</b><span>Skjønnhetstekniker</span></figcaption>
+      </figure>
+      <figure class="team-card">
+        <div class="team-photo"><img src="images/team-olena.jpg" alt="Olena hos Beauty Room" loading="lazy" decoding="async"></div>
+        <figcaption><b>Olena</b><span>Skjønnhetstekniker</span></figcaption>
+      </figure>
+      <figure class="team-card">
+        <div class="team-photo"><img src="images/team-thy.jpg" alt="Thy hos Beauty Room" loading="lazy" decoding="async"></div>
+        <figcaption><b>Thy</b><span>Lærling · Negler</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== GALLERI ==================== -->
+<section class="gallery petals" id="galleri" aria-label="Galleri">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="label center">Galleri</span>
+      <h2>Håndverk vi er <em class="foil-text">stolte av</em></h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <figure><img src="images/vipper-klassisk.jpg" alt="Klassiske vippeextensions på begge øyne" loading="lazy" decoding="async" width="1125" height="1477"></figure>
+      <figure><img src="images/negler-blomstervegg.jpg" alt="French manikyr foran blomsterveggen i salongen" loading="lazy" decoding="async" width="1440" height="1440"></figure>
+      <figure><img src="images/hero.jpg" alt="Volumvipper og laminerte bryn i makro" loading="lazy" decoding="async" width="1080" height="1381"></figure>
+      <figure><img src="images/negler-blabaer.jpg" alt="French manikyr med blåbærdesign" loading="lazy" decoding="async" width="1240" height="1250"></figure>
+      <figure><img src="images/vipper-volum.jpg" alt="Volumvipper i nærbilde" loading="lazy" decoding="async" width="692" height="669"></figure>
+      <figure><img src="images/negler-almond.jpg" alt="Mandelformede gelenegler med french tips" loading="lazy" decoding="async" width="1364" height="1800"></figure>
+      <figure><img src="images/negler-ombre.jpg" alt="Rosa ombré-gelenegler" loading="lazy" decoding="async" width="1927" height="1928"></figure>
+      <figure><img src="images/vipper-for-etter.jpg" alt="Før og etter vippeextensions" loading="lazy" decoding="async" width="1125" height="1477"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ANMELDELSER ==================== -->
+<section class="reviews" id="anmeldelser" aria-label="Anmeldelser">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="label center">Anmeldelser</span>
+      <h2>Hva kundene våre sier</h2>
+      <p class="lede">Ekte tilbakemeldinger fra Google.</p>
+    </div>
+    <div class="reviews-grid">
+      <article class="review-card reveal">
+        <span class="stars" role="img" aria-label="5 av 5 stjerner">
+          <svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        </span>
+        <blockquote>«Jeg er utrolig fornøyd med behandlingen hos Beauty Room. De er både kjempeflinke og veldig serviceinnstilte. Vippeextensions ble akkurat slik jeg ønsket.»</blockquote>
+        <cite>Google-anmeldelse</cite>
+      </article>
+      <article class="review-card reveal" style="--d:.08s">
+        <span class="stars" role="img" aria-label="5 av 5 stjerner">
+          <svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        </span>
+        <blockquote>«Perfekte vipper hver gang. Byttet vippedame hele tiden frem til jeg prøvde Beauty Room, gått fast siden.»</blockquote>
+        <cite>Nora</cite>
+      </article>
+      <article class="review-card reveal" style="--d:.16s">
+        <span class="stars" role="img" aria-label="5 av 5 stjerner">
+          <svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        </span>
+        <blockquote>«Alltid kjempefornøyd! Tar både negler og vipper her og har gjort det fast i flere år.»</blockquote>
+        <cite>Cecilie</cite>
+      </article>
+      <article class="review-card reveal">
+        <span class="stars" role="img" aria-label="5 av 5 stjerner">
+          <svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        </span>
+        <blockquote>«Kristiansands beste salong. Har tatt kurs i vippeextensions her og er kjempefornøyd!»</blockquote>
+        <cite>Eline</cite>
+      </article>
+      <article class="review-card reveal" style="--d:.08s">
+        <span class="stars" role="img" aria-label="5 av 5 stjerner">
+          <svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        </span>
+        <blockquote>«Aldri har jeg hatt så fine negler som nå!»</blockquote>
+        <cite>Gitte</cite>
+      </article>
+      <article class="review-card reveal" style="--d:.16s">
+        <span class="stars" role="img" aria-label="5 av 5 stjerner">
+          <svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="#C6A455" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        </span>
+        <blockquote lang="en">«I've been going to Angie for eyelash extensions for over a year now and it's 10/10 every time.»</blockquote>
+        <cite>Aira</cite>
+      </article>
+    </div>
+    <div class="reviews-cta reveal">
+      <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Beauty+Room+AS+Tordenskjolds+gate+17+Kristiansand" target="_blank" rel="noopener">Les flere anmeldelser på Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== KURS ==================== -->
+<section class="course" id="kurs">
+  <div class="container">
+    <div class="course-grid">
+      <div class="reveal">
+        <span class="label">Kurs ✨</span>
+        <h2>Bli vippetekniker</h2>
+        <p class="course-sub">Grunnkurs i vippeextensions med Mary Jane</p>
+        <p>Drømmer du om å jobbe med vipper? På to intensive dager lærer du håndverket av en av Kristiansands mest erfarne vippeteknikere, og du går hjem med alt du trenger for å komme i gang.</p>
+        <ul class="course-feats">
+          <li>2 dager med teori og praksis på ekte modeller</li>
+          <li>Komplett starter kit inkludert</li>
+          <li>Sertifikat etter fullført kurs</li>
+          <li>Tilgang til benk i salongen og støtte fra kursholder etterpå</li>
+        </ul>
+        <div class="course-price"><span class="num">10 000 kr</span><span class="per">alt inkludert</span></div>
+        <a class="btn btn-gold" href="mailto:beautyroom.krs.as@gmail.com?subject=Kursinteresse%20%E2%80%93%20Beauty%20Room">Meld interesse</a>
+        <div class="course-extra">
+          <span><b>Kurs i farge &amp; form av bryn</b> · lær profesjonell brynsstyling</span>
+          <span style="font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--gold-light)">3 000 kr</span>
+        </div>
+      </div>
+      <div class="course-visual reveal" style="--d:.15s">
+        <div class="gilt">
+          <video class="course-video" src="images/kurs-video.mp4" poster="images/vipper-makro.jpg"
+                 muted loop playsinline preload="metadata"
+                 aria-label="Video: vippeextensions utført hos Beauty Room"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== KONTAKT ==================== -->
+<section class="contact petals" id="kontakt">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="label center">Kontakt</span>
+      <h2>Besøk oss i <em class="foil-text">Kvadraturen</em></h2>
+      <p class="lede">Vi holder til sentralt i Kristiansand, og vi gleder oss til å se deg.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#A8853B" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 1 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <div><span class="cl-label">Adresse</span>Tordenskjolds gate 17, 4612 Kristiansand</div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#A8853B" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            <div><span class="cl-label">Telefon</span><a href="tel:+4797875166">978 75 166</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#A8853B" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3 7 9 6 9-6"/></svg>
+            <div><span class="cl-label">E-post</span><a href="mailto:beautyroom.krs.as@gmail.com">beautyroom.krs.as@gmail.com</a></div>
+          </li>
+        </ul>
+        <div class="socials">
+          <a href="https://www.instagram.com/beautyroomkrs" target="_blank" rel="noopener" aria-label="Beauty Room på Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#A8853B" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="#A8853B" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/beautyroomkrs" target="_blank" rel="noopener" aria-label="Beauty Room på Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#A8853B" stroke-width="1.6"><path d="M14 8.5V7a2 2 0 0 1 2-2h1.5V2H15a5 5 0 0 0-5 5v1.5H7.5V12H10v10h4V12h2.6l.9-3.5z"/></svg>
+          </a>
+        </div>
+        <div class="divider" aria-hidden="true"><span></span></div>
+        <span class="cl-label" style="font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-dark);font-weight:500">Åpningstider</span>
+        <table class="hours">
+          <tr><td>Mandag til fredag</td><td>10:00–16:00</td></tr>
+          <tr><td>Lørdag og søndag</td><td>Varierer, se booking</td></tr>
+        </table>
+      </div>
+      <div class="map-wrap reveal" style="--d:.15s">
+        <iframe
+          src="https://www.google.com/maps?q=Tordenskjolds+gate+17,+4612+Kristiansand&output=embed"
+          title="Kart til Beauty Room AS, Tordenskjolds gate 17, Kristiansand"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M50 3 92 50 50 97 8 50Z" fill="none" stroke="url(#foil)" stroke-width="2"/>
+          <path d="M50 11 85 50 50 89 15 50Z" fill="none" stroke="url(#foil)" stroke-width="1.4"/>
+          <text x="50" y="63" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="38" font-weight="600" fill="url(#foil)">B</text>
+        </svg>
+        <p class="tagline">Lashes · Brows · Nails · Skincare</p>
+      </div>
+      <nav class="footer-nav" aria-label="Bunnmeny">
+        <p class="footer-head">Meny</p>
+        <ul>
+          <li><a href="#tjenester">Tjenester</a></li>
+          <li><a href="#priser">Priser</a></li>
+          <li><a href="#om-oss">Om oss</a></li>
+          <li><a href="#kurs">Kurs</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <p class="footer-head">Beauty Room AS</p>
+        <p>Tordenskjolds gate 17<br>4612 Kristiansand</p>
+        <p><a href="tel:+4797875166">978 75 166</a><br>
+        <a href="mailto:beautyroom.krs.as@gmail.com">beautyroom.krs.as@gmail.com</a></p>
+        <p><a href="https://www.instagram.com/beautyroomkrs" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/beautyroomkrs" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Beauty Room AS. Alle rettigheter forbeholdt.</span>
+      <span>Nettside av <a href="https://trygg-digital.com" target="_blank" rel="noopener">Trygg Digital</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== STICKY MOBIL-CTA ==================== -->
+<div class="mobile-cta" id="mobileCta">
+  <a class="btn btn-gold" href="https://beautyroomkrs.onlinebooq.net/" target="_blank" rel="noopener">Bestill time</a>
+  <a class="tel-btn" href="tel:+4797875166" aria-label="Ring Beauty Room">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#A8853B" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+  </a>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  document.documentElement.classList.add('js');
+
+  /* Header-skygge ved scroll */
+  var header = document.querySelector('.site-header');
+  function onScroll(){ header.classList.toggle('scrolled', window.scrollY > 30); }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* Hamburger */
+  var burger = document.querySelector('.burger');
+  var nav = document.getElementById('mainNav');
+  function closeNav(){
+    nav.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    burger.setAttribute('aria-label', 'Åpne meny');
+    document.body.style.overflow = '';
+  }
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+    burger.setAttribute('aria-label', open ? 'Lukk meny' : 'Åpne meny');
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  nav.addEventListener('click', function(e){
+    if (e.target.tagName === 'A') closeNav();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && nav.classList.contains('open')) { closeNav(); burger.focus(); }
+  });
+
+  /* Scroll-reveal */
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+  /* Sikkerhetsnett: hvis observer aldri fyrer (gamle webviews), vis alt */
+  setTimeout(function(){
+    if (!document.querySelector('.reveal.in')) {
+      document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+      var mc = document.getElementById('mobileCta');
+      if (mc) mc.classList.add('visible');
+    }
+  }, 1400);
+
+  /* Kurs-video: spill av når seksjonen kommer i visning, pause når den forlater */
+  var courseVideo = document.querySelector('.course-video');
+  if (courseVideo) {
+    courseVideo.muted = true;
+    var tryPlay = function(){ var p = courseVideo.play(); if (p && p.catch) p.catch(function(){}); };
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if (en.isIntersecting) tryPlay();
+          else courseVideo.pause();
+        });
+      }, {threshold:.4}).observe(courseVideo);
+    } else {
+      tryPlay();
+    }
+  }
+
+  /* Før/etter-slider */
+  document.querySelectorAll('.ba').forEach(function(ba){
+    var range = ba.querySelector('input[type="range"]');
+    if (!range) return;
+    range.addEventListener('input', function(){
+      ba.style.setProperty('--pos', range.value + '%');
+    });
+  });
+
+  /* Prisliste-accordion */
+  document.querySelectorAll('.acc-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var panel = document.getElementById(btn.getAttribute('aria-controls'));
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      panel.classList.toggle('open', !open);
+      panel.style.maxHeight = open ? '0px' : panel.scrollHeight + 'px';
+    });
+  });
+  window.addEventListener('resize', function(){
+    document.querySelectorAll('.acc-btn[aria-expanded="true"]').forEach(function(btn){
+      var panel = document.getElementById(btn.getAttribute('aria-controls'));
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    });
+  });
+
+  /* Sticky mobil-CTA etter hero */
+  var hero = document.querySelector('.hero');
+  var cta = document.getElementById('mobileCta');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(entries){
+      cta.classList.toggle('visible', !entries[0].isIntersecting);
+    }, {threshold:.15}).observe(hero);
+  } else {
+    cta.classList.add('visible');
+  }
+})();
+</script>
+</body>
+</html>
